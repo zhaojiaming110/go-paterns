@@ -13,5 +13,4 @@ func (d *Director) Create(color, wheels string, speed float64) *Car {
 	d.builder.BuildSpeed(speed)
 	d.builder.BuildWheels(wheels)
 	return d.builder.GetResult().(*Car)
-
 }
